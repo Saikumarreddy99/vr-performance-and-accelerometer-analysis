@@ -11,7 +11,7 @@ def read_file(name):
     import matplotlib.pyplot as plt
 
     # Reading the patients.csv file (.5 point)
-    patient_df = pd.read_csv(r'C:\Users\KeerthikaSunchu\Downloads\patients.csv')
+    patient_df = pd.read_csv(r'C:\Users\Saikumar\Downloads\patients.csv')
     index = patient_df['patient']
 
     M2_affected = [0 for i in range(len(index))]
@@ -28,7 +28,7 @@ def read_file(name):
         print(message_b)
 
         # Concatenating strings to make the appropriate path + filename (1 point)
-        base_path = r'C:\Users\ramya\Downloads\log_scores'
+        base_path = r'C:\Users\Saikumar\Downloads\log_scores'
         if affected_side.lower() == 'right':
             tmp_affected_file = f'{base_path}\\{i}\\LOG_Right.csv'
         elif affected_side.lower() == 'left':
